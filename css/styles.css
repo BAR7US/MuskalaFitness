@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.kontener {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.naglowek {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo p {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    opacity: 0.9;
+}
+
+
+.zawartosc {
+    padding: 40px;
+}
+
+.zawartosc h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+.zawartosc p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.info-kalkulatora {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.karta-kalkulatora {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #3498db;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.karta-kalkulatora:hover {
+    transform: translateY(-5px);
+}
+
+.karta-kalkulatora h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.karta-kalkulatora p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.karta-kalkulatora i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+
+.przycisk {
+    display: inline-block;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: white;
+    padding: 12px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.przycisk:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+}
+
+
+.stopka {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.p {
+    font-size: 0.95rem;
+    color: #bdc3c7;
+    margin-top: 10px;
+}

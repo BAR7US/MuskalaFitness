@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalkulator BMI - MuskalaFitness</title>
+  <link rel="stylesheet" href="bmi.css">
+</head>
+
+<body>
+
+  <div class="kontener">
+    <h1>Kalkulator BMI</h1>
+    <form id="formularzBMI">
+      <label for="plec">Płeć:</label>
+      <select id="plec" required>
+        <option value="">Wybierz...</option>
+        <option value="kobieta">Kobieta</option>
+        <option value="mezczyzna">Mężczyzna</option>
+      </select>
+
+      <label for="wiek">Wiek:</label>
+      <input type="number" id="wiek" min="1" required />
+
+      <label for="waga">Waga (kg):</label>
+      <input type="number" id="waga" min="1" required />
+
+      <label for="wzrost">Wzrost (cm):</label>
+      <input type="number" id="wzrost" min="1" required />
+
+      <button type="submit" class="przycisk">Oblicz BMI</button>
+    </form>
+
+    <div id="wynik" class="wynik" style="display: none;"></div>
+
+    <div class="opis">
+      <p>BMI obliczane jest na podstawie wagi i wzrostu. Interpretacja zależy od płci i wieku.</p>
+    </div>
+  </div>
+
+<script src="bmi.js"></script>
+
+</body>
+</html>
