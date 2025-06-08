@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kalkulator BMI - MuskalaFitness</title>
+  <link rel="stylesheet" href="css/kcal.css">
+</head>
+<body>
+
+  <div class="glowny-kontener">
+    <!-- Lewy kontener -->
+    <div class="kontener">
+      <h1>Oblicz swoje zapotrzebowanie kaloryczne</h1>
+      <form id="KalkulatorKcal">
+        <label for="plec">Płeć:</label>
+        <select id="plec" required>
+          <option value="kobieta">Kobieta</option>
+          <option value="mezczyzna">Mężczyzna</option>
+        </select>
+
+        <label for="wiek">Wiek:</label>
+        <input type="number" id="wiek" min="1" required />
+
+        <label for="waga">Waga:</label>
+        <input type="number" id="waga" min="1" required />
+
+        <label for="wzrost">Wzrost:</label>
+        <input type="number" id="wzrost" min="1" required />
+
+        <label for="akt">Aktywność fizyczna:</label>
+        <select id="akt" required>
+          <option value="1">Siedzący tryb życia</option>
+          <option value="2">Lekka aktywność fizyczna</option>
+          <option value="3">Umiarkowana aktywność fizyczna</option>
+          <option value="4">Wysoka aktywność fizyczna</option>
+          <option value="5">Bardzo wysoka aktywność fizyczna</option>
+        </select>
+
+        <label for="cel">Wybierz swój cel:</label>
+        <select id="cel" required>
+          <option value="1">Chcę schudnąć</option>
+          <option value="2">Chcę utrzymać wagę</option>
+          <option value="3">Chcę nabrać masy</option>
+        </select>
+
+        <button type="submit" class="przycisk">Oblicz</button>
+      </form>
+
+      <div id="wynik" class="wynik" style="display: none;"></div>
+
+      <div class="opis">
+        <p>Oblicz swoje zapotrzebowanie kaloryczne i już dziś zadbaj o swoją sylwetkę</p>
+      </div>
+    </div>
+
+    <!-- Prawy kontener -->
+    <div class="kontener">
+      <h1>Co liczymy?</h1>
+      <p>Liczymy zapotrzebowanie kaloryczne wzorem na CPM <br>
+        CPM - Całkowite zapotrzebowanie energi<br><br>
+         Jest to ilość kalorii którą powinniśmy jeść w trakcie dnia uwzględniajać aktywność fizyczną w trakcie dnia</p>
+      <ul>
+        <h1>Nie wiesz jaką aktywność spełniasz?</h1>
+        <li>Siedzący tryb życia - Dni spędzasz raczej w łóżku<br></li>
+        <li>Lekka aktywność fizyczna - Lekka praca czasami trening<br></li>
+        <li>Umiarkowana aktywność fizyczna - lekka praca mniej więcej 2 lub 3 treningi w tygodniu<br></li>
+        <li>Wysoka aktywność fizyczna - lekka praca i wysiłek fizyczny 4 lub 5 razy w tygodnoi<br></li>
+        <li>Bardzo wysoka aktywność fizyczna - lekka praca i trening 5 razy w tygodniu lub więcej<br></li>
+        <p>Jeżeli twoja praca jest aktywna (Praca gdzie naprawde można się namęczyć) wybierz aktywność fizyczną poziom wyżej</p>
+      </ul>
+    </div>
+  </div>
+  <script src="js/kcal.js"></script>
+</body>
+</html>

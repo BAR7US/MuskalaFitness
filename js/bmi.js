@@ -48,7 +48,7 @@
       // sklejanie wyniku benc
       wynik.innerHTML = `
         <strong>BMI:</strong> ${bmi} — ${interpretacja}<br />
-        ${uwaga ? "<em>" + uwaga + "</em>" : ""}
+        ${uwaga ? "<em>" + uwaga + "</em>" : ""} 
       `;
       wynik.style.display = "block";
 
